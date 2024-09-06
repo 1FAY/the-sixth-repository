@@ -43,7 +43,7 @@ def check_keyboard_navigation(driver):
             else:
                 recommendations.append({
                     'html': elem.get_attribute('outerHTML'),
-                    'recom': 'Элемент не доступен для клавиатурной навигации.'
+                    'recom': 'Элемент не доступен для клавиатурной навигации. Добавьте атрибуты tabindex и убедитесь, что элемент может получать фокус с помощью клавиатуры.'
                 })
         print(f"-- Keyboard Navigation: {working_elements}/{len(all_focusable_elements)}")
         return 1 if len(all_focusable_elements) > 0 else 0, recommendations
@@ -58,7 +58,7 @@ def check_screen_reader_labels(driver):
         correctly_labeled = sum(1 for elem in all_elements if elem.get('aria-label') or elem.get('role'))
         recommendations = [{
             'html': str(elem),
-            'recom': 'Элемент не имеет aria-label или role.'
+            'recom': 'Элемент не имеет aria-label или role. Добавьте описательные aria-label или role для улучшения доступности.'
         } for elem in all_elements if not (elem.get('aria-label') or elem.get('role'))]
         print(f"-- Screen Reader Labels: {correctly_labeled}/{len(all_elements)}")
         return 1 if len(all_elements) > 0 else 0, recommendations
@@ -73,7 +73,7 @@ def check_accessible_captcha(html_code):
         if not has_accessible_captcha:
             recommendations.append({
                 'html': html_code,
-                'recom': 'Капча недоступна для пользователей с ограниченными возможностями.'
+                'recom': 'Капча недоступна для пользователей с ограниченными возможностями. Добавьте аудиовариант или альтернативный текст для капчи, чтобы улучшить доступность.'
             })
         print(f"-- Accessible Captcha: {has_accessible_captcha}")
         return 1 if has_accessible_captcha else 0, recommendations
@@ -89,7 +89,7 @@ def check_headings_and_links(driver):
         valid_links = sum(1 for link in all_links if link.text.strip() or link.get('aria-label'))
         recommendations = [{
             'html': str(link),
-            'recom': 'Ссылка или заголовок не содержит текст или aria-label.'
+            'recom': 'Ссылка или заголовок не содержит текст или aria-label. Убедитесь, что каждая ссылка и заголовок имеют описательный текст или aria-label для улучшения навигации.'
         } for link in all_links if not (link.text.strip() or link.get('aria-label'))]
         print(f"-- Valid Headings Links: {valid_links}/{len(all_links)}")
         return 1 if h1 and valid_links > 0 else 0, recommendations
@@ -128,7 +128,7 @@ def check_contrast(driver):
                     if contrast_result < 4.5:
                         recommendations.append({
                             'html': str(elem),
-                            'recom': f'Контраст текста ({contrast_result}) ниже рекомендуемого уровня 4.5.'
+                            'recom': f'Контраст текста ({contrast_result}) ниже рекомендуемого уровня 4.5. Измените цвета текста и фона для улучшения контраста.'
                         })
 
         if contrast_scores:
@@ -150,7 +150,7 @@ def check_scalability(driver):
         if body.size['width'] != 320:
             recommendations.append({
                 'html': body.get_attribute('outerHTML'),
-                'recom': 'Страница не масштабируется до размеров мобильного экрана.'
+                'recom': 'Страница не масштабируется до размеров мобильного экрана. Оптимизируйте CSS стили и макет для корректного отображения на мобильных устройствах.'
             })
         return 1 if body.size['width'] == 320 else 0, recommendations
     except Exception as e:
@@ -163,7 +163,7 @@ def check_image_alt_text(driver):
         images = soup.find_all('img')
         recommendations = [{
             'html': str(img),
-            'recom': 'Изображение не имеет alt-текста.'
+            'recom': 'Изображение не имеет alt-текста. Добавьте описательные alt-теги к изображениям для улучшения доступности.'
         } for img in images if not img.get('alt')]
         valid_alts = sum(1 for img in images if img.get('alt'))
         print(f"-- Valid Alt Text: {valid_alts}/{len(images)}")
