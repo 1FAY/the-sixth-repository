@@ -1,0 +1,233 @@
+[
+    {
+        "url": "https://www.russian-school.uk/",
+        "total_score": 0.42857142857142855,
+        "keyboard_functionality": 1,
+        "keyboard_functionality_recom": [
+            {
+                "html": "<a href=\"https://www.russian-school.uk/\" title=\"London School of Russian Language and Literature, London, UK\" rel=\"home\">\n\t\t\t\t<img src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/header_bg.jpg\" alt=\"London School of Russian Language and Literature, London, UK\">\n\t\t\t</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/welcome/\">Добро пожаловать</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/welcome_russian_school/\">Welcome</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/about-our-school/\">Наша школа</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/news-and-events/\">Новости и события</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/exam-centre/\">Экзаменационный центр</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/my-native-russian-language-year-5/\">Учебник “Мой родной русский язык” 5-6-7 класс</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/russian-language-course-for-adults/\">Russian Language for Adults</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/ballet-dance-studio/\">Ballet/Dance Балетно-танцевальная студия</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/music-and-drama/\">Музыка и драма</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/art-studio/\">Художественная студия</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/summer-with-us/\">Лето с нами</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/advice-to-the-parents/\">Советы родителям</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/%d1%84%d0%be%d1%82%d0%be%d0%b0%d0%bb%d1%8c%d0%b1%d0%be%d0%bc/\">Фотоальбом</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/video-gallery/\">Видеоальбом</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/bilium-project/\">BILIUM Project</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/grundtvig-project/\">Grundtvig project</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/methodical-centre/\">Методический центр</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/contact/\">Контакты</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" title=\"London School of Russian Language on Facebook\" target=\"_blank\">\n\t\t<img decoding=\"async\" src=\"/wp-content/uploads/facebook.png\" alt=\"Connect us through Facebook\">\n\t</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" title=\"London School of Russian Language on Youtube\" target=\"_blank\">\n\t\t<img decoding=\"async\" src=\"/wp-content/uploads/youtube.png\" alt=\"Watch us on Youtube\">\n\t</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            },
+            {
+                "html": "<a href=\"mailto:info@russian-school.uk\">info@russian-school.uk</a>",
+                "recom": "Элемент не доступен для клавиатурной навигации."
+            }
+        ],
+        "screen_reader_accessibility": 1,
+        "screen_reader_accessibility_recom": [
+            {
+                "html": "<div id=\"pgstructure\">\n<header id=\"header\">\n<a href=\"https://www.russian-school.uk/\" rel=\"home\" title=\"London School of Russian Language and Literature, London, UK\">\n<img alt=\"London School of Russian Language and Literature, London, UK\" src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/header_bg.jpg\"/>\n</a>\n</header><aside id=\"sidebar\">\n<nav aria-label=\"Main Menu\">\n<ul class=\"\" id=\"main-nav\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2292\" id=\"menu-item-2292\"><a href=\"https://www.russian-school.uk/welcome/\">Добро пожаловать</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2293\" id=\"menu-item-2293\"><a href=\"https://www.russian-school.uk/welcome_russian_school/\">Welcome</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2294\" id=\"menu-item-2294\"><a href=\"https://www.russian-school.uk/about-our-school/\">Наша школа</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2295\" id=\"menu-item-2295\"><a href=\"https://www.russian-school.uk/news-and-events/\">Новости и события</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2296\" id=\"menu-item-2296\"><a href=\"https://www.russian-school.uk/exam-centre/\">Экзаменационный центр</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2645\" id=\"menu-item-2645\"><a href=\"https://www.russian-school.uk/my-native-russian-language-year-5/\">Учебник “Мой родной русский язык” 5-6-7 класс</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2297\" id=\"menu-item-2297\"><a href=\"https://www.russian-school.uk/russian-language-course-for-adults/\">Russian Language for Adults</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2298\" id=\"menu-item-2298\"><a href=\"https://www.russian-school.uk/ballet-dance-studio/\">Ballet/Dance Балетно-танцевальная студия</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2299\" id=\"menu-item-2299\"><a href=\"https://www.russian-school.uk/music-and-drama/\">Музыка и драма</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2300\" id=\"menu-item-2300\"><a href=\"https://www.russian-school.uk/art-studio/\">Художественная студия</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2302\" id=\"menu-item-2302\"><a href=\"https://www.russian-school.uk/summer-with-us/\">Лето с нами</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2303\" id=\"menu-item-2303\"><a href=\"https://www.russian-school.uk/advice-to-the-parents/\">Советы родителям</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2305\" id=\"menu-item-2305\"><a href=\"https://www.russian-school.uk/%d1%84%d0%be%d1%82%d0%be%d0%b0%d0%bb%d1%8c%d0%b1%d0%be%d0%bc/\">Фотоальбом</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2306\" id=\"menu-item-2306\"><a href=\"https://www.russian-school.uk/video-gallery/\">Видеоальбом</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2288\" id=\"menu-item-2288\"><a href=\"https://www.russian-school.uk/bilium-project/\">BILIUM Project</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2289\" id=\"menu-item-2289\"><a href=\"https://www.russian-school.uk/grundtvig-project/\">Grundtvig project</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2290\" id=\"menu-item-2290\"><a href=\"https://www.russian-school.uk/methodical-centre/\">Методический центр</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2307\" id=\"menu-item-2307\"><a href=\"https://www.russian-school.uk/contact/\">Контакты</a></li>\n</ul>\n<div class=\"widget widget_block\" id=\"block-2\"><div class=\"social\">\n<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" target=\"_blank\" title=\"London School of Russian Language on Facebook\">\n<img alt=\"Connect us through Facebook\" decoding=\"async\" src=\"/wp-content/uploads/facebook.png\"/>\n</a>\n<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" target=\"_blank\" title=\"London School of Russian Language on Youtube\">\n<img alt=\"Watch us on Youtube\" decoding=\"async\" src=\"/wp-content/uploads/youtube.png\"/>\n</a>\n</div></div> </nav>\n</aside>\n<main id=\"content_area\">\n<img alt=\"Welcome to London School of Russian Language and Literature\" draggable=\"false\" height=\"355\" src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/russian_language_school.jpg\" style=\"width: 100%; height: auto;\" width=\"554\"/>\n</main>\n<footer id=\"footer\">\n\tClasses held at: Brookland Schools, Hill Top, London, NW11 6EJ, 07771782406<br/>\n\tTel/Fax: 020 8458 60 77<br/>\n<a href=\"mailto:info@russian-school.uk\">info@russian-school.uk</a>\n</footer>\n</div>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/\" rel=\"home\" title=\"London School of Russian Language and Literature, London, UK\">\n<img alt=\"London School of Russian Language and Literature, London, UK\" src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/header_bg.jpg\"/>\n</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/welcome/\">Добро пожаловать</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/welcome_russian_school/\">Welcome</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/about-our-school/\">Наша школа</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/news-and-events/\">Новости и события</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/exam-centre/\">Экзаменационный центр</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/my-native-russian-language-year-5/\">Учебник “Мой родной русский язык” 5-6-7 класс</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/russian-language-course-for-adults/\">Russian Language for Adults</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/ballet-dance-studio/\">Ballet/Dance Балетно-танцевальная студия</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/music-and-drama/\">Музыка и драма</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/art-studio/\">Художественная студия</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/summer-with-us/\">Лето с нами</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/advice-to-the-parents/\">Советы родителям</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/%d1%84%d0%be%d1%82%d0%be%d0%b0%d0%bb%d1%8c%d0%b1%d0%be%d0%bc/\">Фотоальбом</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/video-gallery/\">Видеоальбом</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/bilium-project/\">BILIUM Project</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/grundtvig-project/\">Grundtvig project</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/methodical-centre/\">Методический центр</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.russian-school.uk/contact/\">Контакты</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<div class=\"widget widget_block\" id=\"block-2\"><div class=\"social\">\n<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" target=\"_blank\" title=\"London School of Russian Language on Facebook\">\n<img alt=\"Connect us through Facebook\" decoding=\"async\" src=\"/wp-content/uploads/facebook.png\"/>\n</a>\n<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" target=\"_blank\" title=\"London School of Russian Language on Youtube\">\n<img alt=\"Watch us on Youtube\" decoding=\"async\" src=\"/wp-content/uploads/youtube.png\"/>\n</a>\n</div></div>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<div class=\"social\">\n<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" target=\"_blank\" title=\"London School of Russian Language on Facebook\">\n<img alt=\"Connect us through Facebook\" decoding=\"async\" src=\"/wp-content/uploads/facebook.png\"/>\n</a>\n<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" target=\"_blank\" title=\"London School of Russian Language on Youtube\">\n<img alt=\"Watch us on Youtube\" decoding=\"async\" src=\"/wp-content/uploads/youtube.png\"/>\n</a>\n</div>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" target=\"_blank\" title=\"London School of Russian Language on Facebook\">\n<img alt=\"Connect us through Facebook\" decoding=\"async\" src=\"/wp-content/uploads/facebook.png\"/>\n</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" target=\"_blank\" title=\"London School of Russian Language on Youtube\">\n<img alt=\"Watch us on Youtube\" decoding=\"async\" src=\"/wp-content/uploads/youtube.png\"/>\n</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            },
+            {
+                "html": "<a href=\"mailto:info@russian-school.uk\">info@russian-school.uk</a>",
+                "recom": "Элемент не имеет aria-label или role."
+            }
+        ],
+        "captcha_accessibility": 0,
+        "captcha_accessibility_recom": [
+            {
+                "html": "",
+                "recom": "Капча недоступна для пользователей с ограниченными возможностями."
+            }
+        ],
+        "headings_links_description": 0,
+        "headings_links_description_recom": [
+            {
+                "html": "<a href=\"https://www.russian-school.uk/\" rel=\"home\" title=\"London School of Russian Language and Literature, London, UK\">\n<img alt=\"London School of Russian Language and Literature, London, UK\" src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/header_bg.jpg\"/>\n</a>",
+                "recom": "Ссылка или заголовок не содержит текст или aria-label."
+            },
+            {
+                "html": "<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" target=\"_blank\" title=\"London School of Russian Language on Facebook\">\n<img alt=\"Connect us through Facebook\" decoding=\"async\" src=\"/wp-content/uploads/facebook.png\"/>\n</a>",
+                "recom": "Ссылка или заголовок не содержит текст или aria-label."
+            },
+            {
+                "html": "<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" target=\"_blank\" title=\"London School of Russian Language on Youtube\">\n<img alt=\"Watch us on Youtube\" decoding=\"async\" src=\"/wp-content/uploads/youtube.png\"/>\n</a>",
+                "recom": "Ссылка или заголовок не содержит текст или aria-label."
+            }
+        ],
+        "contrast": 0,
+        "contrast_recom": [],
+        "scalability": 0,
+        "scalability_recom": [
+            {
+                "html": "<body data-rsssl=\"1\" class=\"home page-template page-template-intro_page page-template-intro_page-php page page-id-3\" itemscope=\"\" itemtype=\"http://schema.org/WebPage\">\n\n\t<div id=\"pgstructure\">\n\t\t<header id=\"header\">\n\t\t\t<a href=\"https://www.russian-school.uk/\" title=\"London School of Russian Language and Literature, London, UK\" rel=\"home\">\n\t\t\t\t<img src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/header_bg.jpg\" alt=\"London School of Russian Language and Literature, London, UK\">\n\t\t\t</a>\n\t\t</header><aside id=\"sidebar\">\n\t<nav aria-label=\"Main Menu\">\n\t\t<ul id=\"main-nav\" class=\"\"><li id=\"menu-item-2292\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2292\"><a href=\"https://www.russian-school.uk/welcome/\">Добро пожаловать</a></li>\n<li id=\"menu-item-2293\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2293\"><a href=\"https://www.russian-school.uk/welcome_russian_school/\">Welcome</a></li>\n<li id=\"menu-item-2294\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2294\"><a href=\"https://www.russian-school.uk/about-our-school/\">Наша школа</a></li>\n<li id=\"menu-item-2295\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2295\"><a href=\"https://www.russian-school.uk/news-and-events/\">Новости и события</a></li>\n<li id=\"menu-item-2296\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2296\"><a href=\"https://www.russian-school.uk/exam-centre/\">Экзаменационный центр</a></li>\n<li id=\"menu-item-2645\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2645\"><a href=\"https://www.russian-school.uk/my-native-russian-language-year-5/\">Учебник “Мой родной русский язык” 5-6-7 класс</a></li>\n<li id=\"menu-item-2297\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2297\"><a href=\"https://www.russian-school.uk/russian-language-course-for-adults/\">Russian Language for Adults</a></li>\n<li id=\"menu-item-2298\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2298\"><a href=\"https://www.russian-school.uk/ballet-dance-studio/\">Ballet/Dance Балетно-танцевальная студия</a></li>\n<li id=\"menu-item-2299\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2299\"><a href=\"https://www.russian-school.uk/music-and-drama/\">Музыка и драма</a></li>\n<li id=\"menu-item-2300\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2300\"><a href=\"https://www.russian-school.uk/art-studio/\">Художественная студия</a></li>\n<li id=\"menu-item-2302\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2302\"><a href=\"https://www.russian-school.uk/summer-with-us/\">Лето с нами</a></li>\n<li id=\"menu-item-2303\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2303\"><a href=\"https://www.russian-school.uk/advice-to-the-parents/\">Советы родителям</a></li>\n<li id=\"menu-item-2305\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2305\"><a href=\"https://www.russian-school.uk/%d1%84%d0%be%d1%82%d0%be%d0%b0%d0%bb%d1%8c%d0%b1%d0%be%d0%bc/\">Фотоальбом</a></li>\n<li id=\"menu-item-2306\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2306\"><a href=\"https://www.russian-school.uk/video-gallery/\">Видеоальбом</a></li>\n<li id=\"menu-item-2288\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2288\"><a href=\"https://www.russian-school.uk/bilium-project/\">BILIUM Project</a></li>\n<li id=\"menu-item-2289\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2289\"><a href=\"https://www.russian-school.uk/grundtvig-project/\">Grundtvig project</a></li>\n<li id=\"menu-item-2290\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2290\"><a href=\"https://www.russian-school.uk/methodical-centre/\">Методический центр</a></li>\n<li id=\"menu-item-2307\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2307\"><a href=\"https://www.russian-school.uk/contact/\">Контакты</a></li>\n</ul>\n\t\t\t\t<div id=\"block-2\" class=\"widget widget_block\"><div class=\"social\">\n\t<a href=\"http://www.facebook.com/LondonSchoolOfRussian\" title=\"London School of Russian Language on Facebook\" target=\"_blank\">\n\t\t<img decoding=\"async\" src=\"/wp-content/uploads/facebook.png\" alt=\"Connect us through Facebook\">\n\t</a>\n\t<a href=\"https://www.youtube.com/playlist?list=PL5yrVka1wxDNJT-ZRfBlaxlgw681a6RKN\" title=\"London School of Russian Language on Youtube\" target=\"_blank\">\n\t\t<img decoding=\"async\" src=\"/wp-content/uploads/youtube.png\" alt=\"Watch us on Youtube\">\n\t</a>\n</div></div>\t\t\t</nav>\n</aside>\n<main id=\"content_area\">\n\t<img draggable=\"false\" src=\"https://www.russian-school.uk/wp-content/themes/russian-school-2023/images/russian_language_school.jpg\" width=\"554\" height=\"355\" alt=\"Welcome to London School of Russian Language and Literature\" style=\"width: 100%; height: auto;\">\n</main>\n\n<footer id=\"footer\">\n\tClasses held at: Brookland Schools, Hill Top, London, NW11 6EJ, 07771782406<br>\n\tTel/Fax: 020 8458 60 77<br>\n\t<a href=\"mailto:info@russian-school.uk\">info@russian-school.uk</a>\n</footer>\n\n</div> <!-- end of pgstructure -->\n\n<script type=\"text/javascript\">\nvar _gaq = _gaq || [];\n_gaq.push(['_setAccount', 'UA-17625662-1']);\n_gaq.push(['_trackPageview']);\n\n(function() {\n\tvar ga = document.createElement('script');\n\tga.type = 'text/javascript';\n\tga.async = true;\n\tga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n\tvar s = document.getElementsByTagName('script')[0];\n\ts.parentNode.insertBefore(ga, s);\n})();\n</script>\n\n\n\n\n</body>",
+                "recom": "Страница не масштабируется до размеров мобильного экрана."
+            }
+        ],
+        "alt_text": 1,
+        "alt_text_recom": []
+    }
+]

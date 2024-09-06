@@ -1,0 +1,55 @@
+[
+    {
+        "url": "",
+        "total_score": "",
+        "keyboard_functionality": "",
+        "keyboard_functionality_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "screen_reader_accessibility": "",
+        "screen_reader_accessibility_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "captcha_accessibility": "",
+        "captcha_accessibility_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "headings_links_description": "",
+        "headings_links_description_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "contrast": "",
+        "contrast_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "scalability": "",
+        "scalability_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ],
+        "alt_text": "",
+        "alt_text_recom": [
+            {
+                "html": "",
+                "recom": ""
+            }
+        ]
+    }
+]
