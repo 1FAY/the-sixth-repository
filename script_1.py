@@ -41,9 +41,11 @@ def check_keyboard_navigation(driver):
             if focused_element == elem and elem.is_displayed():
                 working_elements += 1
             else:
+                outer_html = elem.get_attribute('outerHTML')
+                correct_html = re.sub(r'tabindex="[^"]*"', 'tabindex="0"', outer_html) if 'tabindex' in outer_html else outer_html.replace('<', '<span tabindex="0">')
                 recommendations.append({
-                    'html': elem.get_attribute('outerHTML'),
-                    'recom': 'Элемент не доступен для клавиатурной навигации. Добавьте атрибуты tabindex и убедитесь, что элемент может получать фокус с помощью клавиатуры.'
+                    'html': outer_html,
+                    'recom': 'Элемент не доступен для клавиатурной навигации. Добавьте атрибуты tabindex. Пример исправленного кода:\n' + correct_html
                 })
         print(f"-- Keyboard Navigation: {working_elements}/{len(all_focusable_elements)}")
         return 1 if len(all_focusable_elements) > 0 else 0, recommendations
@@ -56,10 +58,18 @@ def check_screen_reader_labels(driver):
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         all_elements = soup.find_all(['button', 'a', 'input', 'div', 'span'])
         correctly_labeled = sum(1 for elem in all_elements if elem.get('aria-label') or elem.get('role'))
-        recommendations = [{
-            'html': str(elem),
-            'recom': 'Элемент не имеет aria-label или role. Добавьте описательные aria-label или role для улучшения доступности.'
-        } for elem in all_elements if not (elem.get('aria-label') or elem.get('role'))]
+        recommendations = []
+        for elem in all_elements:
+            if not (elem.get('aria-label') or elem.get('role')):
+                outer_html = str(elem)
+                if 'button' in outer_html or 'a' in outer_html:
+                    correct_html = re.sub(r'<([a-zA-Z]+)', r'<\1 aria-label="Описание действия"', outer_html)
+                else:
+                    correct_html = re.sub(r'<([a-zA-Z]+)', r'<\1 role="presentation"', outer_html)
+                recommendations.append({
+                    'html': outer_html,
+                    'recom': 'Элемент не имеет aria-label или role. Добавьте aria-label или role. Пример исправленного кода:\n' + correct_html
+                })
         print(f"-- Screen Reader Labels: {correctly_labeled}/{len(all_elements)}")
         return 1 if len(all_elements) > 0 else 0, recommendations
     except Exception as e:
@@ -71,9 +81,10 @@ def check_accessible_captcha(html_code):
         has_accessible_captcha = bool(re.search(r'(captcha.*audio|captcha.*alt|captcha.*accessible)', html_code, re.IGNORECASE))
         recommendations = []
         if not has_accessible_captcha:
+            correct_html = '<div aria-label="captcha challenge">\n  <audio controls>\n    <source src="audio_captcha.mp3" type="audio/mpeg">\n  </audio>\n</div>'
             recommendations.append({
                 'html': html_code,
-                'recom': 'Капча недоступна для пользователей с ограниченными возможностями. Добавьте аудиовариант или альтернативный текст для капчи, чтобы улучшить доступность.'
+                'recom': 'Капча недоступна для пользователей с ограниченными возможностями. Добавьте аудиовариант или альтернативный текст. Пример исправленного кода:\n' + correct_html
             })
         print(f"-- Accessible Captcha: {has_accessible_captcha}")
         return 1 if has_accessible_captcha else 0, recommendations
@@ -84,13 +95,18 @@ def check_accessible_captcha(html_code):
 def check_headings_and_links(driver):
     try:
         soup = BeautifulSoup(driver.page_source, 'html.parser')
-        h1 = soup.find_all(re.compile('^h[1-6]$'))  # Ищем заголовки
+        h1 = soup.find_all(re.compile('^h[1-6]$'))
         all_links = soup.find_all('a')
         valid_links = sum(1 for link in all_links if link.text.strip() or link.get('aria-label'))
-        recommendations = [{
-            'html': str(link),
-            'recom': 'Ссылка или заголовок не содержит текст или aria-label. Убедитесь, что каждая ссылка и заголовок имеют описательный текст или aria-label для улучшения навигации.'
-        } for link in all_links if not (link.text.strip() or link.get('aria-label'))]
+        recommendations = []
+        for link in all_links:
+            if not (link.text.strip() or link.get('aria-label')):
+                outer_html = str(link)
+                correct_html = re.sub(r'<a ', '<a aria-label="Описание ссылки" ', outer_html)
+                recommendations.append({
+                    'html': outer_html,
+                    'recom': 'Ссылка не содержит текст или aria-label. Пример исправленного кода:\n' + correct_html
+                })
         print(f"-- Valid Headings Links: {valid_links}/{len(all_links)}")
         return 1 if h1 and valid_links > 0 else 0, recommendations
     except Exception as e:
@@ -112,7 +128,6 @@ def check_contrast(driver):
         text_elements = soup.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
         contrast_scores = []
         recommendations = []
-
         for elem in text_elements:
             style = elem.get('style', '')
             text_color_match = re.search(r'color:\s*(#[0-9a-fA-F]{6}|[a-zA-Z]+)', style)
@@ -122,15 +137,14 @@ def check_contrast(driver):
                 text_color = text_color_match.group(1)
                 background_color = background_color_match.group(1)
                 contrast_result = get_color_contrast(text_color, background_color)
-
-                if contrast_result:
-                    contrast_scores.append(contrast_result)
-                    if contrast_result < 4.5:
-                        recommendations.append({
-                            'html': str(elem),
-                            'recom': f'Контраст текста ({contrast_result}) ниже рекомендуемого уровня 4.5. Измените цвета текста и фона для улучшения контраста.'
-                        })
-
+                if contrast_result and contrast_result < 4.5:
+                    correct_html = re.sub(r'color:[^;]+', 'color: #000000', style)
+                    correct_html = re.sub(r'background-color:[^;]+', 'background-color: #FFFFFF', correct_html)
+                    recommendations.append({
+                        'html': str(elem),
+                        'recom': f'Контраст текста ({contrast_result}) ниже 4.5. Пример исправленного кода:\n' + correct_html
+                    })
+        min_ratio = min(contrast_scores) if contrast_scores else 0
         if contrast_scores:
             min_ratio = min(contrast_scores)
             print(f"-- Min Contrast Ratio: {min_ratio}")
@@ -145,12 +159,12 @@ def check_scalability(driver):
     try:
         driver.set_window_size(320, 480)
         body = driver.find_element(By.TAG_NAME, 'body')
-        print(f"-- Check Scalability: {body.size['width']}")
         recommendations = []
         if body.size['width'] != 320:
+            correct_html = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
             recommendations.append({
                 'html': body.get_attribute('outerHTML'),
-                'recom': 'Страница не масштабируется до размеров мобильного экрана. Оптимизируйте CSS стили и макет для корректного отображения на мобильных устройствах.'
+                'recom': 'Страница не масштабируется до размеров мобильного экрана. Добавьте тег viewport для улучшения масштабирования. Пример исправленного кода:\n' + correct_html
             })
         return 1 if body.size['width'] == 320 else 0, recommendations
     except Exception as e:
@@ -161,10 +175,15 @@ def check_image_alt_text(driver):
     try:
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         images = soup.find_all('img')
-        recommendations = [{
-            'html': str(img),
-            'recom': 'Изображение не имеет alt-текста. Добавьте описательные alt-теги к изображениям для улучшения доступности.'
-        } for img in images if not img.get('alt')]
+        recommendations = []
+        for img in images:
+            if not img.get('alt'):
+                outer_html = str(img)
+                correct_html = re.sub(r'<img ', '<img alt="Описание изображения" ', outer_html)
+                recommendations.append({
+                    'html': outer_html,
+                    'recom': 'Изображение не имеет alt-текста. Добавьте alt-тег. Пример исправленного кода:\n' + correct_html
+                })
         valid_alts = sum(1 for img in images if img.get('alt'))
         print(f"-- Valid Alt Text: {valid_alts}/{len(images)}")
         return 1 if valid_alts == len(images) else 0, recommendations
