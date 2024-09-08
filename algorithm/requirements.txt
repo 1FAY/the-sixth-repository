@@ -1,5 +1,7 @@
 Flask
+flask_cors
 selenium
 beautifulsoup4
 requests
 pandas
+tqdm

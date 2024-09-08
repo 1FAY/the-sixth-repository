@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  flutter_web:
+    build: 
+      context: ./flutter_web
+    container_name: flutter_web
+    restart: always
+    ports:
+      - 80:80
+    networks:
+      default:
+        ipv4_address: 172.16.1.4
+  
+  algorithm:
+    build: ./algorithm
+    container_name: algorithm
+    restart: always
+    ports:
+      - "5000:5000"
+    networks:
+      default:
+        ipv4_address: 172.16.1.6
+    
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24

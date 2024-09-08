@@ -1,7 +1,8 @@
+import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
-import 'package:site/src/pages/widgets/html.dart';
 
 import '../../data/accessibility_data.dart';
+
 
 class Section extends StatelessWidget {
   const Section({ 
@@ -49,7 +50,13 @@ class Section extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Html(htmlCode: rec.html),
+                        ExpandableText(
+                          rec.html,
+                          expandText: 'развернуть',
+                          collapseText: 'свернуть',
+                          maxLines: 2,
+                          linkColor: Colors.blue,
+                        ),
                         Text('Рекомендации: ${rec.recom}'),
                       ],
                     ),

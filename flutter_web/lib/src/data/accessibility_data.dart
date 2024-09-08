@@ -36,33 +36,40 @@ class AccessibilityData {
   });
 
   factory AccessibilityData.fromJson(Map<String, dynamic> json) {
-    var keyboardFunctionalityRecom = (json['keyboard_functionality_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> keyboardFunctionalityRecom =
+        (json['keyboard_functionality_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var screenReaderAccessibilityRecom = (json['screen_reader_accessibility_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> screenReaderAccessibilityRecom = 
+        (json['screen_reader_accessibility_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var captchaAccessibilityRecom = (json['captcha_accessibility_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> captchaAccessibilityRecom =
+        (json['captcha_accessibility_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var headingsLinksDescriptionRecom = (json['headings_links_description_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> headingsLinksDescriptionRecom = 
+        (json['headings_links_description_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var contrastRecom = (json['contrast_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> contrastRecom = 
+        (json['contrast_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var scalabilityRecom = (json['scalability_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> scalabilityRecom = 
+        (json['scalability_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
-    var altTextRecom = (json['alt_text_recom'] as List)
-        .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
-        .toList();
+    List<Recommendation> altTextRecom = 
+        (json['alt_text_recom'] as List)
+            .map((e) => Recommendation.fromJson(e as Map<String, dynamic>))
+            .toList();
 
     return AccessibilityData(
       url: json['url'] as String,

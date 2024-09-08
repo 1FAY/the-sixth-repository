@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM joyzoursky/python-chromedriver
 
 WORKDIR /app
 
